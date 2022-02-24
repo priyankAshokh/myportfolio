@@ -1,0 +1,54 @@
+.skills {
+    padding: 50px 20px 70px 20px;
+    background: #ebeeee;
+}
+.skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.skills-wrapper, .projects {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    line-height: 30px;
+}
+.projects {
+    margin-top: 60px;
+}
+.skills-title {
+    width: 35%;
+    span {
+        border-bottom: 3px solid #11abb0;
+        padding-bottom: 10px;
+        font-size: 20px;
+        font-weight: 600;    
+    }
+    h3 {
+        text-align: center;
+        margin-right: 40px;
+    }
+}
+.skills-list {
+    width: 55%;
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-gap: 20px;
+    padding: 0 20px;
+    img {
+        cursor: pointer;
+    }
+}
+.demo {
+    cursor: pointer;
+    color: #6e7881;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 767px){
+.skills-list {
+    grid-template-columns: repeat(2, 100px);
+     img {
+         width: 45px;
+     }
+}
+}

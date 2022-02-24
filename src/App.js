@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import { createTheme, ThemeProvider } from "@material-ui/core";
+import Header from "./components/Header/header";
+import About from "./components/AboutMe/about";
+import Education from "./components/Education/education";
+import Skills from "./components/Skills/skills";
+import "./App.css"
+
+const theme = createTheme({
+  fontFamily: "Nunito Sans', sans-serif"
+})
+
+const scrollTo = (id) => {
+  if (window && document && document.getElementById(id)) {
+      window.scrollTo({ behavior: 'smooth', top: document.getElementById(id).offsetTop });
+  }
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme}>
+      <div className="App">
+        <Header scrollTo={scrollTo}/>
+        <About />
+        <Education />
+        <Skills />
+      </div>
+    </ThemeProvider>
   );
 }
 
