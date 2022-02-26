@@ -14,6 +14,9 @@
 }
 .projects {
     margin-top: 60px;
+    .list {
+        margin-bottom: 20px;
+    }
 }
 .skills-title {
     width: 35%;
@@ -40,8 +43,9 @@
 }
 .demo {
     cursor: pointer;
-    color: #6e7881;
     font-weight: 600;
+    text-decoration: none;
+    color: #11abb0;
 }
 
 @media only screen and (max-width: 767px){

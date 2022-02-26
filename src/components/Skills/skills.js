@@ -27,17 +27,17 @@ const Skills = () => {
                         <h3><span>PERSONAL PROJECTS</span></h3>
                     </div>
                     <div className="edu-info">
-                        <div>
+                        <div className="list">
                             <h2>Todo List App</h2>
-                            <p className="demo"><i>https://relaxed-rosalind-4635f4.netlify.app/</i></p>
+                            <a className="demo" href="https://relaxed-rosalind-4635f4.netlify.app/"><i>https://relaxed-rosalind-4635f4.netlify.app/</i></a>
                         </div>
-                        <div>
+                        <div className="list">
                             <h2>Calculator App</h2>
-                            <p className="demo"><i>https://github.com/Priyanka-ashok/Calculator-React</i></p>
+                            <a className="demo" href="https://github.com/Priyanka-ashok/Calculator-React"><i>https://github.com/Priyanka-ashok/Calculator-React</i></a>
                         </div>
-                        <div>
+                        <div className="list">
                             <h2>Simple Video Player Ap</h2>
-                            <p className="demo"><i>https://determined-johnson-106d95.netlify.app/</i></p>
+                            <a className="demo" href="https://determined-johnson-106d95.netlify.app/"><i>https://determined-johnson-106d95.netlify.app/</i></a>
                         </div>
                     </div>
                 </div>

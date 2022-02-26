@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from "../../../src/priyanka.jpg";
 import "./about.scss";
 
 
 const About = () => {
-
+ 
     return (
         <section id="About" className="about-container">
             <div className="about">
